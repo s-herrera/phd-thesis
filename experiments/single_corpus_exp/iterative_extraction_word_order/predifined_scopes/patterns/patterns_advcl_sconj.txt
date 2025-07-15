@@ -1,0 +1,43 @@
+scope: pattern { V[upos=AUX|VERB]; V-[mod]->SC; SC[upos=SCONJ]; SC-[1=comp,2=obj]->Clause }
+conclusion: SC << Clause
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "upos", "xpos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    V:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "upos", "xpos", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+    SC: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "rel.*", "upos"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+    Clause:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+

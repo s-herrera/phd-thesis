@@ -1,0 +1,13 @@
+{
+  "scope": "pattern { ADP[upos=ADP,!ExtPos,!InIdiom] ; ADP-[comp:obj]->N }",
+  "conclusion": "ADP << N",
+  "data_len": 11031,
+  "n_yes": 11030,
+  "intercepts": [
+    [
+      0.001,
+      8.611824460924963
+    ]
+  ],
+  "rules": []
+}

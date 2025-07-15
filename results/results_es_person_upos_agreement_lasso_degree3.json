@@ -1,0 +1,842 @@
+{
+  "scope": "pattern { X[Person]; Y[Person]; X->Y }",
+  "conclusion": "X.Person = Y.Person",
+  "data_len": 12382,
+  "n_yes": 10988,
+  "intercepts": [
+    [
+      0.1,
+      2.0646240132876414
+    ],
+    [
+      0.099,
+      2.0646240132876446
+    ],
+    [
+      0.098,
+      2.064624013287642
+    ],
+    [
+      0.097,
+      2.0646240132876437
+    ],
+    [
+      0.096,
+      2.0646240132876397
+    ],
+    [
+      0.095,
+      2.064624013287644
+    ],
+    [
+      0.094,
+      2.0646240132876437
+    ],
+    [
+      0.093,
+      2.064624013287646
+    ],
+    [
+      0.092,
+      2.064624013287644
+    ],
+    [
+      0.091,
+      2.0646240132876446
+    ],
+    [
+      0.09000000000000001,
+      2.0646240132876397
+    ],
+    [
+      0.08900000000000001,
+      2.0646240132876397
+    ],
+    [
+      0.08800000000000001,
+      2.0646240132876397
+    ],
+    [
+      0.08700000000000001,
+      2.0646240132876423
+    ],
+    [
+      0.08600000000000001,
+      2.064624013287642
+    ],
+    [
+      0.085,
+      2.0646240132876423
+    ],
+    [
+      0.084,
+      2.0646240132876432
+    ],
+    [
+      0.083,
+      2.0646240132876446
+    ],
+    [
+      0.082,
+      2.064624013287645
+    ],
+    [
+      0.081,
+      2.0646240132876446
+    ],
+    [
+      0.08,
+      2.064624013287639
+    ],
+    [
+      0.079,
+      2.0646240132876392
+    ],
+    [
+      0.07800000000000001,
+      2.0646240132876468
+    ],
+    [
+      0.07700000000000001,
+      2.0646240132876397
+    ],
+    [
+      0.07600000000000001,
+      2.0646240132876446
+    ],
+    [
+      0.07500000000000001,
+      2.064624013287638
+    ],
+    [
+      0.07400000000000001,
+      2.0646240132876437
+    ],
+    [
+      0.07300000000000001,
+      2.064624013287642
+    ],
+    [
+      0.07200000000000001,
+      2.064624013287642
+    ],
+    [
+      0.07100000000000001,
+      2.064624013287646
+    ],
+    [
+      0.07,
+      2.0646240132876437
+    ],
+    [
+      0.069,
+      2.0646240132876446
+    ],
+    [
+      0.068,
+      2.064624013287639
+    ],
+    [
+      0.067,
+      2.064624013287642
+    ],
+    [
+      0.066,
+      2.0646240132876414
+    ],
+    [
+      0.065,
+      2.064624013287642
+    ],
+    [
+      0.064,
+      2.0646240132876414
+    ],
+    [
+      0.063,
+      2.0646240132876446
+    ],
+    [
+      0.062000000000000006,
+      2.0646240132876437
+    ],
+    [
+      0.061000000000000006,
+      2.0646240132876432
+    ],
+    [
+      0.060000000000000005,
+      2.0646240132876432
+    ],
+    [
+      0.059000000000000004,
+      2.0646240132876463
+    ],
+    [
+      0.058,
+      2.0646240132876423
+    ],
+    [
+      0.057,
+      2.064624013287642
+    ],
+    [
+      0.05600000000000001,
+      2.0646240132876423
+    ],
+    [
+      0.05500000000000001,
+      2.064624013287643
+    ],
+    [
+      0.054000000000000006,
+      2.0646240132876432
+    ],
+    [
+      0.053000000000000005,
+      2.064624013287643
+    ],
+    [
+      0.052000000000000005,
+      2.06462401328764
+    ],
+    [
+      0.051000000000000004,
+      2.0646240132876454
+    ],
+    [
+      0.05,
+      2.0646240132876477
+    ],
+    [
+      0.049,
+      2.064624013287486
+    ],
+    [
+      0.048,
+      2.0646240132874905
+    ],
+    [
+      0.04700000000000001,
+      2.0646240132874913
+    ],
+    [
+      0.046000000000000006,
+      2.0646240132874953
+    ],
+    [
+      0.045000000000000005,
+      2.0646240132874967
+    ],
+    [
+      0.044000000000000004,
+      2.0646240132874913
+    ],
+    [
+      0.043000000000000003,
+      2.064624013287639
+    ],
+    [
+      0.042,
+      2.0646240132876392
+    ],
+    [
+      0.041,
+      2.064624013287643
+    ],
+    [
+      0.04000000000000001,
+      2.0646240132876397
+    ],
+    [
+      0.03900000000000001,
+      2.0646240132876414
+    ],
+    [
+      0.038000000000000006,
+      2.064624013287643
+    ],
+    [
+      0.037000000000000005,
+      2.064624013287644
+    ],
+    [
+      0.036000000000000004,
+      2.064624013287638
+    ],
+    [
+      0.035,
+      2.064624013287639
+    ],
+    [
+      0.034,
+      2.0646240132876423
+    ],
+    [
+      0.033,
+      2.0646240132876423
+    ],
+    [
+      0.032,
+      2.06462401328764
+    ],
+    [
+      0.031,
+      2.064624013287641
+    ],
+    [
+      0.03,
+      2.06462401328764
+    ],
+    [
+      0.028999999999999998,
+      2.064624013287642
+    ],
+    [
+      0.027999999999999997,
+      2.06462401328764
+    ],
+    [
+      0.02700000000000001,
+      2.0580089905176986
+    ],
+    [
+      0.02600000000000001,
+      2.0446355751114407
+    ],
+    [
+      0.02500000000000001,
+      2.0313985490107913
+    ],
+    [
+      0.024000000000000007,
+      2.018294704086783
+    ],
+    [
+      0.023000000000000007,
+      2.0053209402742023
+    ],
+    [
+      0.022000000000000006,
+      1.9924742635995432
+    ],
+    [
+      0.021000000000000005,
+      1.979752654483245
+    ],
+    [
+      0.020000000000000004,
+      1.9671513646861285
+    ],
+    [
+      0.019000000000000003,
+      1.958493432028889
+    ],
+    [
+      0.018000000000000002,
+      1.96025468231628
+    ],
+    [
+      0.017,
+      1.9599247183087922
+    ],
+    [
+      0.016,
+      1.9599171910398527
+    ],
+    [
+      0.015,
+      1.9761739233210731
+    ],
+    [
+      0.013999999999999999,
+      1.995336264018894
+    ],
+    [
+      0.012999999999999998,
+      2.014705365127458
+    ],
+    [
+      0.01200000000000001,
+      2.034317161907921
+    ],
+    [
+      0.01100000000000001,
+      2.0539891853367416
+    ],
+    [
+      0.010000000000000009,
+      2.0768406641892545
+    ],
+    [
+      0.009000000000000008,
+      2.094918377065902
+    ],
+    [
+      0.008000000000000007,
+      2.118150413643913
+    ],
+    [
+      0.007000000000000006,
+      2.1212149066990746
+    ],
+    [
+      0.006000000000000005,
+      2.1213638355383013
+    ],
+    [
+      0.0050000000000000044,
+      2.121530302882451
+    ],
+    [
+      0.0040000000000000036,
+      2.1223078447024526
+    ],
+    [
+      0.0030000000000000027,
+      2.1123412899618232
+    ],
+    [
+      0.0020000000000000018,
+      2.100950178722006
+    ],
+    [
+      0.001,
+      2.1012819381299197
+    ]
+  ],
+  "rules": [
+    {
+      "pattern": "node:Y:own:rel_shallow=comp",
+      "n_pattern_occurences": 3210,
+      "n_pattern_positive_occurences": 3189,
+      "n_pattern_negative_occurrences": 21,
+      "decision": "yes",
+      "alpha": 0.02700000000000001,
+      "value": 0.012522105247308568,
+      "coverage": 29.022570076447035,
+      "coverage_q_in_p": 0.9934579439252337,
+      "coverage_not_q_in_p": 0.0065420560747663555,
+      "precision": 99.34579439252337,
+      "ratio": 151.85714285714286,
+      "delta": 340.3907284768211,
+      "g-statistic": 600.4178728725973,
+      "p-value": 0.0,
+      "cramers_phi": 0.4324882267940376
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_shallow=comp",
+      "n_pattern_occurences": 3208,
+      "n_pattern_positive_occurences": 3187,
+      "n_pattern_negative_occurrences": 21,
+      "decision": "yes",
+      "alpha": 0.02700000000000001,
+      "value": 0.007833626402739657,
+      "coverage": 29.00436840189297,
+      "coverage_q_in_p": 0.9934538653366584,
+      "coverage_not_q_in_p": 0.006546134663341646,
+      "precision": 99.34538653366583,
+      "ratio": 151.76190476190476,
+      "delta": 340.16556291390725,
+      "g-statistic": 599.9663751307955,
+      "p-value": 0.0,
+      "cramers_phi": 0.43246033041761334
+    },
+    {
+      "pattern": "node:Y:own:upos=PRON,node:Y:own:rel_shallow=comp",
+      "n_pattern_occurences": 3210,
+      "n_pattern_positive_occurences": 3189,
+      "n_pattern_negative_occurrences": 21,
+      "decision": "yes",
+      "alpha": 0.02700000000000001,
+      "value": 3.6415315207705135e-14,
+      "coverage": 29.022570076447035,
+      "coverage_q_in_p": 0.9934579439252337,
+      "coverage_not_q_in_p": 0.0065420560747663555,
+      "precision": 99.34579439252337,
+      "ratio": 151.85714285714286,
+      "delta": 340.3907284768211,
+      "g-statistic": 600.4178728725973,
+      "p-value": 0.0,
+      "cramers_phi": 0.4324882267940376
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:upos=PRON,node:Y:own:rel_shallow=comp",
+      "n_pattern_occurences": 3208,
+      "n_pattern_positive_occurences": 3187,
+      "n_pattern_negative_occurrences": 21,
+      "decision": "yes",
+      "alpha": 0.02700000000000001,
+      "value": 0.005357979379665645,
+      "coverage": 29.00436840189297,
+      "coverage_q_in_p": 0.9934538653366584,
+      "coverage_not_q_in_p": 0.006546134663341646,
+      "precision": 99.34538653366583,
+      "ratio": 151.76190476190476,
+      "delta": 340.16556291390725,
+      "g-statistic": 599.9663751307955,
+      "p-value": 0.0,
+      "cramers_phi": 0.43246033041761334
+    },
+    {
+      "pattern": "node:Y:own:rel_shallow=comp:obj",
+      "n_pattern_occurences": 2045,
+      "n_pattern_positive_occurences": 1552,
+      "n_pattern_negative_occurrences": 493,
+      "decision": "no",
+      "alpha": 0.019000000000000003,
+      "value": -0.011931868895625086,
+      "coverage": 35.36585365853659,
+      "coverage_q_in_p": 0.7589242053789731,
+      "coverage_not_q_in_p": 0.2410757946210269,
+      "precision": 24.10757946210269,
+      "ratio": 0.31765463917525777,
+      "delta": -262.7682119205299,
+      "g-statistic": 265.2557029283269,
+      "p-value": 0.0,
+      "cramers_phi": 0.3601518987663413
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_shallow=comp:obj",
+      "n_pattern_occurences": 2043,
+      "n_pattern_positive_occurences": 1550,
+      "n_pattern_negative_occurrences": 493,
+      "decision": "no",
+      "alpha": 0.019000000000000003,
+      "value": -0.006756444730337263,
+      "coverage": 35.36585365853659,
+      "coverage_q_in_p": 0.7586882036221243,
+      "coverage_not_q_in_p": 0.24131179637787567,
+      "precision": 24.131179637787568,
+      "ratio": 0.31806451612903225,
+      "delta": -262.99337748344374,
+      "g-statistic": 265.88197805102186,
+      "p-value": 0.0,
+      "cramers_phi": 0.3607532623893143
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_shallow=comp:obl",
+      "n_pattern_occurences": 1041,
+      "n_pattern_positive_occurences": 716,
+      "n_pattern_negative_occurrences": 325,
+      "decision": "no",
+      "alpha": 0.015,
+      "value": -0.0032387092181387356,
+      "coverage": 23.3142037302726,
+      "coverage_q_in_p": 0.6878001921229587,
+      "coverage_not_q_in_p": 0.3121998078770413,
+      "precision": 31.21998078770413,
+      "ratio": 0.45391061452513964,
+      "delta": -207.8013245033112,
+      "g-statistic": 298.0727438280353,
+      "p-value": 0.0,
+      "cramers_phi": 0.5351010065873119
+    },
+    {
+      "pattern": "node:Y:own:upos=PRON,node:Y:own:rel_shallow=comp:obl",
+      "n_pattern_occurences": 1025,
+      "n_pattern_positive_occurences": 702,
+      "n_pattern_negative_occurrences": 323,
+      "decision": "no",
+      "alpha": 0.015,
+      "value": -0.10716811602193332,
+      "coverage": 23.170731707317074,
+      "coverage_q_in_p": 0.6848780487804879,
+      "coverage_not_q_in_p": 0.3151219512195122,
+      "precision": 31.51219512195122,
+      "ratio": 0.4601139601139601,
+      "delta": -207.60264900662253,
+      "g-statistic": 301.16848840963195,
+      "p-value": 0.0,
+      "cramers_phi": 0.5420543473874111
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:upos=PRON,node:Y:own:rel_shallow=comp:obl",
+      "n_pattern_occurences": 1025,
+      "n_pattern_positive_occurences": 702,
+      "n_pattern_negative_occurrences": 323,
+      "decision": "no",
+      "alpha": 0.015,
+      "value": -2.220446049250313e-16,
+      "coverage": 23.170731707317074,
+      "coverage_q_in_p": 0.6848780487804879,
+      "coverage_not_q_in_p": 0.3151219512195122,
+      "precision": 31.51219512195122,
+      "ratio": 0.4601139601139601,
+      "delta": -207.60264900662253,
+      "g-statistic": 301.16848840963195,
+      "p-value": 0.0,
+      "cramers_phi": 0.5420543473874111
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:upos=VERB,node:Y:own:rel_shallow=conj:coord",
+      "n_pattern_occurences": 1957,
+      "n_pattern_positive_occurences": 1845,
+      "n_pattern_negative_occurrences": 112,
+      "decision": "yes",
+      "alpha": 0.007000000000000006,
+      "value": 0.057956476856191874,
+      "coverage": 16.791044776119403,
+      "coverage_q_in_p": 0.942769545222279,
+      "coverage_not_q_in_p": 0.057230454777721,
+      "precision": 94.2769545222279,
+      "ratio": 16.473214285714285,
+      "delta": 108.32450331125824,
+      "g-statistic": 71.71046657939287,
+      "p-value": 0.0,
+      "cramers_phi": 0.19142376827205956
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:upos=VERB,node:Y:own:rel_shallow=comp:obj",
+      "n_pattern_occurences": 642,
+      "n_pattern_positive_occurences": 436,
+      "n_pattern_negative_occurrences": 206,
+      "decision": "no",
+      "alpha": 0.006000000000000005,
+      "value": -0.0018017944458642576,
+      "coverage": 14.777618364418938,
+      "coverage_q_in_p": 0.6791277258566978,
+      "coverage_not_q_in_p": 0.32087227414330216,
+      "precision": 32.087227414330215,
+      "ratio": 0.4724770642201835,
+      "delta": -133.7218543046357,
+      "g-statistic": 198.2447429657623,
+      "p-value": 0.0,
+      "cramers_phi": 0.555690952352213
+    },
+    {
+      "pattern": "node:Y:own:upos=VERB,node:Y:own:rel_shallow=comp:obj",
+      "n_pattern_occurences": 643,
+      "n_pattern_positive_occurences": 437,
+      "n_pattern_negative_occurrences": 206,
+      "decision": "no",
+      "alpha": 0.0050000000000000044,
+      "value": -0.01350178432829563,
+      "coverage": 14.777618364418938,
+      "coverage_q_in_p": 0.6796267496111975,
+      "coverage_not_q_in_p": 0.3203732503888025,
+      "precision": 32.03732503888025,
+      "ratio": 0.47139588100686497,
+      "delta": -133.6092715231788,
+      "g-statistic": 197.71046592100973,
+      "p-value": 0.0,
+      "cramers_phi": 0.5545099498481294
+    },
+    {
+      "pattern": "node:Y:own:rel_deep=expl",
+      "n_pattern_occurences": 2149,
+      "n_pattern_positive_occurences": 2131,
+      "n_pattern_negative_occurrences": 18,
+      "decision": "yes",
+      "alpha": 0.0040000000000000036,
+      "value": 6.661338147750939e-16,
+      "coverage": 19.393884237349837,
+      "coverage_q_in_p": 0.9916240111679852,
+      "coverage_not_q_in_p": 0.00837598883201489,
+      "precision": 99.16240111679852,
+      "ratio": 118.3888888888889,
+      "delta": 223.9403973509934,
+      "g-statistic": 379.66512037279557,
+      "p-value": 0.0,
+      "cramers_phi": 0.4203220199474132
+    },
+    {
+      "pattern": "node:Y:own:rel_deep=expl,node:Y:own:upos=PRON",
+      "n_pattern_occurences": 2149,
+      "n_pattern_positive_occurences": 2131,
+      "n_pattern_negative_occurrences": 18,
+      "decision": "yes",
+      "alpha": 0.0040000000000000036,
+      "value": 0.008275038911957466,
+      "coverage": 19.393884237349837,
+      "coverage_q_in_p": 0.9916240111679852,
+      "coverage_not_q_in_p": 0.00837598883201489,
+      "precision": 99.16240111679852,
+      "ratio": 118.3888888888889,
+      "delta": 223.9403973509934,
+      "g-statistic": 379.66512037279557,
+      "p-value": 0.0,
+      "cramers_phi": 0.4203220199474132
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_deep=expl",
+      "n_pattern_occurences": 2147,
+      "n_pattern_positive_occurences": 2129,
+      "n_pattern_negative_occurrences": 18,
+      "decision": "yes",
+      "alpha": 0.0020000000000000018,
+      "value": 0.008003585828338045,
+      "coverage": 19.375682562795777,
+      "coverage_q_in_p": 0.9916162086632511,
+      "coverage_not_q_in_p": 0.008383791336748951,
+      "precision": 99.16162086632511,
+      "ratio": 118.27777777777779,
+      "delta": 223.71523178807956,
+      "g-statistic": 379.22102101549274,
+      "p-value": 0.0,
+      "cramers_phi": 0.4202717315884768
+    },
+    {
+      "pattern": "node:Y:own:rel_shallow=unk",
+      "n_pattern_occurences": 244,
+      "n_pattern_positive_occurences": 243,
+      "n_pattern_negative_occurrences": 1,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 0.04359430932044417,
+      "coverage": 2.2115034583181656,
+      "coverage_q_in_p": 0.9959016393442623,
+      "coverage_not_q_in_p": 0.004098360655737705,
+      "precision": 99.59016393442623,
+      "ratio": 243.0,
+      "delta": 26.470198675496675,
+      "g-statistic": 49.425758421851846,
+      "p-value": 2.060240866796903e-12,
+      "cramers_phi": 0.4500717539416511
+    },
+    {
+      "pattern": "node:Y:own:rel_shallow=det",
+      "n_pattern_occurences": 444,
+      "n_pattern_positive_occurences": 411,
+      "n_pattern_negative_occurrences": 33,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 0.0703792308434702,
+      "coverage": 3.740444120859119,
+      "coverage_q_in_p": 0.9256756756756757,
+      "coverage_not_q_in_p": 0.07432432432432433,
+      "precision": 92.56756756756756,
+      "ratio": 12.454545454545453,
+      "delta": 16.986754966887418,
+      "g-statistic": 7.289008757170348,
+      "p-value": 0.0069377744906812255,
+      "cramers_phi": 0.12812761759286445
+    },
+    {
+      "pattern": "node:Y:own:rel_shallow=mod",
+      "n_pattern_occurences": 1038,
+      "n_pattern_positive_occurences": 905,
+      "n_pattern_negative_occurrences": 133,
+      "decision": "no",
+      "alpha": 0.001,
+      "value": -0.07519087290078096,
+      "coverage": 9.540889526542324,
+      "coverage_q_in_p": 0.871868978805395,
+      "coverage_not_q_in_p": 0.128131021194605,
+      "precision": 12.8131021194605,
+      "ratio": 0.14696132596685083,
+      "delta": -16.139072847682087,
+      "g-statistic": 2.417261706701396,
+      "p-value": 0.12000453767474939,
+      "cramers_phi": 0.04825731554454612
+    },
+    {
+      "pattern": "node:Y:own:rel_deep=pass",
+      "n_pattern_occurences": 1305,
+      "n_pattern_positive_occurences": 1301,
+      "n_pattern_negative_occurrences": 4,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 0.32828144167247353,
+      "coverage": 11.840189297415362,
+      "coverage_q_in_p": 0.9969348659003832,
+      "coverage_not_q_in_p": 0.0030651340996168583,
+      "precision": 99.69348659003832,
+      "ratio": 325.25,
+      "delta": 142.9205298013244,
+      "g-statistic": 273.9664692754977,
+      "p-value": 0.0,
+      "cramers_phi": 0.4581877254815874
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_deep=pass",
+      "n_pattern_occurences": 1304,
+      "n_pattern_positive_occurences": 1300,
+      "n_pattern_negative_occurrences": 4,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 0.03740808910932725,
+      "coverage": 11.831088460138332,
+      "coverage_q_in_p": 0.9969325153374233,
+      "coverage_not_q_in_p": 0.003067484662576687,
+      "precision": 99.69325153374233,
+      "ratio": 325.0,
+      "delta": 142.80794701986747,
+      "g-statistic": 273.7337312414475,
+      "p-value": 0.0,
+      "cramers_phi": 0.4581686431361899
+    },
+    {
+      "pattern": "node:Y:own:rel_deep=pass,node:Y:own:upos=PRON",
+      "n_pattern_occurences": 1304,
+      "n_pattern_positive_occurences": 1300,
+      "n_pattern_negative_occurrences": 4,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 0.009878916365488988,
+      "coverage": 11.831088460138332,
+      "coverage_q_in_p": 0.9969325153374233,
+      "coverage_not_q_in_p": 0.003067484662576687,
+      "precision": 99.69325153374233,
+      "ratio": 325.0,
+      "delta": 142.80794701986747,
+      "g-statistic": 273.7337312414475,
+      "p-value": 0.0,
+      "cramers_phi": 0.4581686431361899
+    },
+    {
+      "pattern": "node:Y:own:upos=PRON,node:Y:own:rel_shallow=det",
+      "n_pattern_occurences": 444,
+      "n_pattern_positive_occurences": 411,
+      "n_pattern_negative_occurrences": 33,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 1.1102230246251565e-16,
+      "coverage": 3.740444120859119,
+      "coverage_q_in_p": 0.9256756756756757,
+      "coverage_not_q_in_p": 0.07432432432432433,
+      "precision": 92.56756756756756,
+      "ratio": 12.454545454545453,
+      "delta": 16.986754966887418,
+      "g-statistic": 7.289008757170348,
+      "p-value": 0.0069377744906812255,
+      "cramers_phi": 0.12812761759286445
+    },
+    {
+      "pattern": "node:X:own:upos=VERB,node:Y:own:rel_deep=expl,node:Y:own:upos=PRON",
+      "n_pattern_occurences": 2147,
+      "n_pattern_positive_occurences": 2129,
+      "n_pattern_negative_occurrences": 18,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 1.0547118733938987e-15,
+      "coverage": 19.375682562795777,
+      "coverage_q_in_p": 0.9916162086632511,
+      "coverage_not_q_in_p": 0.008383791336748951,
+      "precision": 99.16162086632511,
+      "ratio": 118.27777777777779,
+      "delta": 223.71523178807956,
+      "g-statistic": 379.22102101549274,
+      "p-value": 0.0,
+      "cramers_phi": 0.4202717315884768
+    },
+    {
+      "pattern": "node:Y:own:rel_deep=pass,node:Y:own:upos=PRON,node:Y:own:rel_shallow=comp",
+      "n_pattern_occurences": 1304,
+      "n_pattern_positive_occurences": 1300,
+      "n_pattern_negative_occurrences": 4,
+      "decision": "yes",
+      "alpha": 0.001,
+      "value": 5.551115123125783e-16,
+      "coverage": 11.831088460138332,
+      "coverage_q_in_p": 0.9969325153374233,
+      "coverage_not_q_in_p": 0.003067484662576687,
+      "precision": 99.69325153374233,
+      "ratio": 325.0,
+      "delta": 142.80794701986747,
+      "g-statistic": 273.7337312414475,
+      "p-value": 0.0,
+      "cramers_phi": 0.4581686431361899
+    }
+  ]
+}

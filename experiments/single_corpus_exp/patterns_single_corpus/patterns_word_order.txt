@@ -1,0 +1,30 @@
+scope: pattern { X[upos]; X-[^punct]->Y }
+conclusion: X << Y
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    X: base
+    Y: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+

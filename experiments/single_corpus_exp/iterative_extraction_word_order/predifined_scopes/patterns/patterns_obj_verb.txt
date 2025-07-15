@@ -1,0 +1,30 @@
+scope: pattern { V[upos=VERB|AUX]; V-[comp:obj]->O }
+conclusion: V << O
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "upos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    V: base
+    O: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "rel.*"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+

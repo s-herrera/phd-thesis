@@ -1,0 +1,33 @@
+scope: pattern { X[Gender]; Y[Gender]; X->Y }
+conclusion: X.Gender = Y.Gender
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "SpaceAfter", "Typo", "Correct.*", "len", "Gender"]
+            lemma_top_k: 10
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    X: base
+    Y: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "SpaceAfter", "Typo", "Correct.*", "len", "Gender"]
+            lemma_top_k: 10
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0

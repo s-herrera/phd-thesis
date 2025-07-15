@@ -1,0 +1,29 @@
+scope: pattern { *-[1=root]->V; V[upos=VERB] } 
+conclusion_meta:
+    type: "spoken"
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "SpaceAfter", "Typo", "Correct.*", "position", "rel.*"]
+            lemma_top_k: 20
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+        prev:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+        next:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "SpaceAfter", "Typo", "Correct.*"]
+            lemma_top_k: 0
+
+features:
+    V: base

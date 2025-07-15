@@ -1,0 +1,12 @@
+{
+    "accuracy": {
+        "best_estimator": "DecisionTreeClassifier(ccp_alpha=np.float64(0.0), criterion='entropy',\n                       max_depth=8, random_state=42)",
+        "best_params": {
+            "ccp_alpha": 0.0,
+            "criterion": "entropy",
+            "max_depth": 8
+        },
+        "best_score": 0.9830672195787061,
+        "scoring": "accuracy"
+    }
+}

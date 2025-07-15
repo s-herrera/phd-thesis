@@ -1,0 +1,30 @@
+scope: pattern { N[upos=NOUN|PRON|PROPN]; N->NUM; NUM[upos=NUM] }
+conclusion: N << NUM
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "upos", "xpos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    N: base
+    NUM: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "upos"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+

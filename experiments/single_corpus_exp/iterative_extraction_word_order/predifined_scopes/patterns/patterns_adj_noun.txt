@@ -1,0 +1,30 @@
+scope: pattern { ADJ[upos=ADJ] ; N-[mod]->ADJ }
+conclusion: ADJ << N
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "position"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma", "xpos", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+
+features:
+    N: base
+    ADJ: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "rel.*", "upos"]
+            lemma_top_k: 0
+        child:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "xpos", "lemma", "SpaceAfter", "Typo", "Correct.*", "len"]
+            lemma_top_k: 0
+

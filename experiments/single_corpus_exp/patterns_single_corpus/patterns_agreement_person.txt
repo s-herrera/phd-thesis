@@ -1,0 +1,25 @@
+scope: pattern { X[Person]; Y[Person]; X->Y }
+conclusion: X.Person = Y.Person
+
+templates:
+    base:
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma",  "xpos", "SpaceAfter", "Typo", "Correct.*", "Shared", "len", "Person"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma",  "xpos", "SpaceAfter", "Typo", "Correct.*", "Shared",  "len"]
+            lemma_top_k: 0
+
+features:
+    X: base
+    Y: 
+        own:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma",  "xpos", "SpaceAfter", "Typo", "Correct.*", "len", "Shared",  "Person"]
+            lemma_top_k: 0
+        parent:
+            method: exclude
+            regexp: ["form", "textform", "wordform", "lemma",  "xpos", "SpaceAfter", "Typo", "Correct.*", "Shared",  "len"]
+            lemma_top_k: 0

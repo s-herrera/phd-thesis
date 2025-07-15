@@ -1,0 +1,12 @@
+scope: pattern { X->Y; X[Gender]; Y[Gender] }
+conclusion: X.Gender = Y.Gender
+
+templates:
+    base:
+        own:
+            method: include
+            regexp: ["upos", "rel.*"]
+            lemma_top_k: 0
+features:
+    X: base
+    Y: base

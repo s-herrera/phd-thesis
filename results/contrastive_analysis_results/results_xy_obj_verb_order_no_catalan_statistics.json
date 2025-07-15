@@ -1,0 +1,3498 @@
+{
+    "scope": "pattern { X-[obj]->Y; X[upos=VERB] }",
+    "scope_occs": 35983,
+    "conclusion": "X << Y",
+    "conclusion_occs": 31370,
+    "languages": [
+        "French",
+        "Italian",
+        "Portuguese",
+        "Romanian",
+        "Spanish"
+    ],
+    "rules": [
+        {
+            "rule": "pattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 5852,
+            "pos occs": 1458,
+            "neg occs": 4394,
+            "rule_precision": 0.7508544087491456,
+            "decision": "left",
+            "alpha": 0.1,
+            "stats": {
+                "p_lang_occs": [
+                    1265,
+                    1027,
+                    908,
+                    1193,
+                    1459
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    1165,
+                    628,
+                    531,
+                    975,
+                    1095
+                ],
+                "precisions": [
+                    0.9209486166007905,
+                    0.611489776046738,
+                    0.5848017621145375,
+                    0.8172673931265717,
+                    0.750514050719671
+                ],
+                "cv": 0.19114136819362385,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 4.50897346604254e-24,
+                "cramers_v": 0.08112112372579193,
+                "residuals": [
+                    6.981631464193066,
+                    -5.154184122720397,
+                    -5.774453104437135,
+                    2.6472523998770265,
+                    -0.015003264958377007
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Fin\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Fin\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3446,
+            "pos occs": 470,
+            "neg occs": 2976,
+            "rule_precision": 0.8636099825885084,
+            "decision": "left",
+            "alpha": 0.02600000000000001,
+            "stats": {
+                "p_lang_occs": [
+                    616,
+                    472,
+                    597,
+                    817,
+                    944
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    561,
+                    401,
+                    433,
+                    706,
+                    875
+                ],
+                "precisions": [
+                    0.9107142857142857,
+                    0.8495762711864406,
+                    0.7252931323283082,
+                    0.8641370869033048,
+                    0.926906779661017
+                ],
+                "cv": 0.09281813819812312,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.0006875879839229546,
+                "cramers_v": 0.0402605363471624,
+                "residuals": [
+                    1.2580332285016445,
+                    -0.32808374495571413,
+                    -3.636666109610466,
+                    0.016212454590740093,
+                    2.092709302266881
+                ]
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 19870,
+            "pos occs": 19724,
+            "neg occs": 146,
+            "rule_precision": 0.9926522395571213,
+            "decision": "right",
+            "alpha": 0.016,
+            "stats": {
+                "p_lang_occs": [
+                    4239,
+                    4274,
+                    4057,
+                    3399,
+                    3901
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    4237,
+                    4249,
+                    4048,
+                    3343,
+                    3847
+                ],
+                "precisions": [
+                    0.9995281906109932,
+                    0.9941506785212916,
+                    0.9977816120285925,
+                    0.9835245660488379,
+                    0.9861573955396052
+                ],
+                "cv": 0.007134180578305635,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9424040936048079,
+                "cramers_v": 0.0031243595256091067,
+                "residuals": [
+                    0.44933052324153006,
+                    0.098323595868384,
+                    0.3279202052645763,
+                    -0.5341178794936188,
+                    -0.4071534668955413
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[Number=\"Sing\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[Number=\"Sing\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3003,
+            "pos occs": 416,
+            "neg occs": 2587,
+            "rule_precision": 0.8614718614718615,
+            "decision": "left",
+            "alpha": 0.015,
+            "stats": {
+                "p_lang_occs": [
+                    588,
+                    489,
+                    476,
+                    624,
+                    826
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    540,
+                    422,
+                    336,
+                    528,
+                    761
+                ],
+                "precisions": [
+                    0.9183673469387755,
+                    0.8629856850715747,
+                    0.7058823529411765,
+                    0.8461538461538461,
+                    0.9213075060532687
+                ],
+                "cv": 0.1029663850523215,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.0007213006784820144,
+                "cramers_v": 0.043063090614520835,
+                "residuals": [
+                    1.48643499806041,
+                    0.036066927984315586,
+                    -3.657322325510587,
+                    -0.4122628925500801,
+                    1.8528038703108387
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Xparent->X;Xparent << X}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Xparent->X;Xparent << X}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4661,
+            "pos occs": 1078,
+            "neg occs": 3583,
+            "rule_precision": 0.76871915897876,
+            "decision": "left",
+            "alpha": 0.012999999999999998,
+            "stats": {
+                "p_lang_occs": [
+                    1014,
+                    791,
+                    686,
+                    900,
+                    1270
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    953,
+                    488,
+                    439,
+                    756,
+                    947
+                ],
+                "precisions": [
+                    0.9398422090729783,
+                    0.6169405815423514,
+                    0.6399416909620991,
+                    0.84,
+                    0.7456692913385827
+                ],
+                "cv": 0.17951598142453853,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 2.5251637018939078e-17,
+                "cramers_v": 0.07653748940774854,
+                "residuals": [
+                    6.215035839397783,
+                    -4.868720764188547,
+                    -3.8469636893099466,
+                    2.438991109646623,
+                    -0.9368853408503522
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Rel\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Rel\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1474,
+            "pos occs": 13,
+            "neg occs": 1461,
+            "rule_precision": 0.991180461329715,
+            "decision": "left",
+            "alpha": 0.01100000000000001,
+            "stats": {
+                "p_lang_occs": [
+                    292,
+                    251,
+                    275,
+                    0,
+                    656
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    292,
+                    238,
+                    275,
+                    0,
+                    656
+                ],
+                "precisions": [
+                    1.0,
+                    0.9482071713147411,
+                    1.0,
+                    0,
+                    1.0
+                ],
+                "cv": 0.5597380116740801,
+                "contains_zero": true,
+                "significance": "common",
+                "pvalue": 0.9047070130726784,
+                "cramers_v": 0.01133989091354638,
+                "residuals": [
+                    0.15137736047759048,
+                    -0.683847240662203,
+                    0.14690475373845974,
+                    -25.49930161067736
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Gender=\"Masc\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Gender=\"Masc\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 14589,
+            "pos occs": 13619,
+            "neg occs": 970,
+            "rule_precision": 0.9335115497977928,
+            "decision": "right",
+            "alpha": 0.010000000000000009,
+            "stats": {
+                "p_lang_occs": [
+                    2923,
+                    3466,
+                    3193,
+                    2184,
+                    2823
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    2762,
+                    3268,
+                    3075,
+                    1882,
+                    2632
+                ],
+                "precisions": [
+                    0.9449196031474513,
+                    0.9428736295441431,
+                    0.963044159098027,
+                    0.8617216117216118,
+                    0.9323414806942969
+                ],
+                "cv": 0.0421827418156656,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.0033322073940243607,
+                "cramers_v": 0.017018502794546773,
+                "residuals": [
+                    0.6383606427968865,
+                    0.5704620621658936,
+                    1.7271952359696812,
+                    -3.472402401809101,
+                    -0.06434385883965356
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Fin\"]}\npattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Fin\"]}%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1736,
+            "pos occs": 85,
+            "neg occs": 1651,
+            "rule_precision": 0.951036866359447,
+            "decision": "left",
+            "alpha": 0.009000000000000008,
+            "stats": {
+                "p_lang_occs": [
+                    387,
+                    259,
+                    175,
+                    555,
+                    360
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    382,
+                    245,
+                    157,
+                    515,
+                    352
+                ],
+                "precisions": [
+                    0.9870801033591732,
+                    0.9459459459459459,
+                    0.8971428571428571,
+                    0.9279279279279279,
+                    0.9777777777777777
+                ],
+                "cv": 0.03880631674521925,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.7993286415854821,
+                "cramers_v": 0.015818522462250698,
+                "residuals": [
+                    0.7270773134367041,
+                    -0.08401319740902703,
+                    -0.731073160927303,
+                    -0.5582488162735756,
+                    0.5202699944498647
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 21764,
+            "pos occs": 20028,
+            "neg occs": 1736,
+            "rule_precision": 0.9202352508730013,
+            "decision": "right",
+            "alpha": 0.008000000000000007,
+            "stats": {
+                "p_lang_occs": [
+                    4165,
+                    4230,
+                    4394,
+                    4805,
+                    4170
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    3774,
+                    3940,
+                    4207,
+                    4230,
+                    3877
+                ],
+                "precisions": [
+                    0.9061224489795918,
+                    0.9314420803782506,
+                    0.957441966317706,
+                    0.8803329864724245,
+                    0.9297362110311751
+                ],
+                "cv": 0.031601549044996784,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.00210296519002888,
+                "cramers_v": 0.014486177873293798,
+                "residuals": [
+                    -0.949448287164933,
+                    0.7598073944562833,
+                    2.5709991103784486,
+                    -2.8833330181908257,
+                    0.6395670654745076
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3328,
+            "pos occs": 751,
+            "neg occs": 2577,
+            "rule_precision": 0.7743389423076923,
+            "decision": "left",
+            "alpha": 0.008000000000000007,
+            "stats": {
+                "p_lang_occs": [
+                    860,
+                    646,
+                    318,
+                    833,
+                    671
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    855,
+                    374,
+                    210,
+                    718,
+                    420
+                ],
+                "precisions": [
+                    0.9941860465116279,
+                    0.5789473684210527,
+                    0.660377358490566,
+                    0.8619447779111644,
+                    0.6259314456035767
+                ],
+                "cv": 0.23720931076308463,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 1.2912283408334682e-24,
+                "cramers_v": 0.10708551203283496,
+                "residuals": [
+                    7.326632779656135,
+                    -5.643604092141831,
+                    -2.309438948495715,
+                    2.873359635773842,
+                    -4.368693226188839
+                ]
+            }
+        },
+        {
+            "rule": "with {X-[nsubj]->Xchild}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[nsubj]->Xchild}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 2550,
+            "pos occs": 351,
+            "neg occs": 2199,
+            "rule_precision": 0.8623529411764705,
+            "decision": "left",
+            "alpha": 0.008000000000000007,
+            "stats": {
+                "p_lang_occs": [
+                    700,
+                    426,
+                    392,
+                    384,
+                    648
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    650,
+                    347,
+                    282,
+                    334,
+                    586
+                ],
+                "precisions": [
+                    0.9285714285714286,
+                    0.8145539906103286,
+                    0.7193877551020408,
+                    0.8697916666666666,
+                    0.904320987654321
+                ],
+                "cv": 0.09838123052130832,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.0040686458089386045,
+                "cramers_v": 0.041743418688253785,
+                "residuals": [
+                    1.8866257236743196,
+                    -1.0623818360735842,
+                    -3.04811117320284,
+                    0.15697179337601994,
+                    1.150439362289723
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[Mood=\"Ind\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[Mood=\"Ind\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3081,
+            "pos occs": 380,
+            "neg occs": 2701,
+            "rule_precision": 0.8766634209672184,
+            "decision": "left",
+            "alpha": 0.008000000000000007,
+            "stats": {
+                "p_lang_occs": [
+                    593,
+                    427,
+                    540,
+                    648,
+                    873
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    544,
+                    370,
+                    394,
+                    583,
+                    810
+                ],
+                "precisions": [
+                    0.9173693086003373,
+                    0.8665105386416861,
+                    0.7296296296296296,
+                    0.8996913580246914,
+                    0.9278350515463918
+                ],
+                "cv": 0.09316455487568377,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.0015538634514948775,
+                "cramers_v": 0.04023170585993685,
+                "residuals": [
+                    1.0586883478301914,
+                    -0.2240716164721766,
+                    -3.6491993837109855,
+                    0.6260746129940559,
+                    1.61480444001699
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[upos=\"PRON\"]}\nwith {X->Xchild;Xchild[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[upos=\"PRON\"]}%0Awith {X->Xchild;Xchild[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3463,
+            "pos occs": 704,
+            "neg occs": 2759,
+            "rule_precision": 0.7967080565983251,
+            "decision": "left",
+            "alpha": 0.007000000000000006,
+            "stats": {
+                "p_lang_occs": [
+                    781,
+                    629,
+                    442,
+                    751,
+                    860
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    725,
+                    428,
+                    294,
+                    624,
+                    688
+                ],
+                "precisions": [
+                    0.9282970550576184,
+                    0.6804451510333863,
+                    0.665158371040724,
+                    0.8308921438082557,
+                    0.8
+                ],
+                "cv": 0.14038205938069892,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 9.444503187600387e-08,
+                "cramers_v": 0.058956641670058096,
+                "residuals": [
+                    4.119983663127748,
+                    -3.266757453071182,
+                    -3.0984988874050896,
+                    1.0495287789900782,
+                    0.10815633964652216
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[upos=\"PRON\"]}\nwith {X->Xchild;Xchild[Person=\"3\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[upos=\"PRON\"]}%0Awith {X->Xchild;Xchild[Person=\"3\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 2073,
+            "pos occs": 333,
+            "neg occs": 1740,
+            "rule_precision": 0.8393632416787264,
+            "decision": "left",
+            "alpha": 0.007000000000000006,
+            "stats": {
+                "p_lang_occs": [
+                    483,
+                    347,
+                    175,
+                    586,
+                    482
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    450,
+                    263,
+                    121,
+                    497,
+                    409
+                ],
+                "precisions": [
+                    0.9316770186335404,
+                    0.7579250720461095,
+                    0.6914285714285714,
+                    0.8481228668941979,
+                    0.8485477178423236
+                ],
+                "cv": 0.1136486725151949,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.01518667885430042,
+                "cramers_v": 0.04205624344133245,
+                "residuals": [
+                    2.214446092483055,
+                    -1.6558377077813344,
+                    -2.1360628123049445,
+                    0.23145115906652267,
+                    0.22009133129478106
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Emph=\"No\"]}\npattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Emph=\"No\"]}%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 855,
+            "pos occs": 4,
+            "neg occs": 851,
+            "rule_precision": 0.9953216374269006,
+            "decision": "left",
+            "alpha": 0.007000000000000006,
+            "stats": {
+                "p_lang_occs": [
+                    855,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    851,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    0.9953216374269006,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[Emph=\"No\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Emph=\"No\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 855,
+            "pos occs": 4,
+            "neg occs": 851,
+            "rule_precision": 0.9953216374269006,
+            "decision": "left",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    855,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    851,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    0.9953216374269006,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Inf\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Inf\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 10377,
+            "pos occs": 9687,
+            "neg occs": 690,
+            "rule_precision": 0.933506793871061,
+            "decision": "right",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    2190,
+                    2653,
+                    2171,
+                    1034,
+                    2329
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    1800,
+                    2600,
+                    2108,
+                    941,
+                    2238
+                ],
+                "precisions": [
+                    0.821917808219178,
+                    0.980022615906521,
+                    0.9709811146936895,
+                    0.9100580270793037,
+                    0.9609274366680979
+                ],
+                "cv": 0.070623612637442,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 2.547274131283824e-08,
+                "cramers_v": 0.03257340081407976,
+                "residuals": [
+                    -5.40486244786418,
+                    2.4797653300545948,
+                    1.8071946854308076,
+                    -0.7804076811610754,
+                    1.3696311794878984
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 3328,
+            "pos occs": 751,
+            "neg occs": 2577,
+            "rule_precision": 0.7743389423076923,
+            "decision": "left",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    860,
+                    646,
+                    318,
+                    833,
+                    671
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    855,
+                    374,
+                    210,
+                    718,
+                    420
+                ],
+                "precisions": [
+                    0.9941860465116279,
+                    0.5789473684210527,
+                    0.660377358490566,
+                    0.8619447779111644,
+                    0.6259314456035767
+                ],
+                "cv": 0.23720931076308463,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 1.2912283408334682e-24,
+                "cramers_v": 0.10708551203283496,
+                "residuals": [
+                    7.326632779656135,
+                    -5.643604092141831,
+                    -2.309438948495715,
+                    2.873359635773842,
+                    -4.368693226188839
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}\npattern {X[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}%0Apattern {X[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1500,
+            "pos occs": 85,
+            "neg occs": 1415,
+            "rule_precision": 0.9433333333333334,
+            "decision": "left",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    363,
+                    275,
+                    134,
+                    421,
+                    307
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    361,
+                    266,
+                    118,
+                    371,
+                    299
+                ],
+                "precisions": [
+                    0.9944903581267218,
+                    0.9672727272727273,
+                    0.8805970149253731,
+                    0.8812351543942993,
+                    0.9739413680781759
+                ],
+                "cv": 0.05792319325354681,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.4395927407297565,
+                "cramers_v": 0.025771046849377956,
+                "residuals": [
+                    1.0035199271834614,
+                    0.4087397810192264,
+                    -0.7477197256149963,
+                    -1.3118594919305797,
+                    0.552169028333325
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}\npattern {X[Person=\"3\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}%0Apattern {X[Person=\"3\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1452,
+            "pos occs": 31,
+            "neg occs": 1421,
+            "rule_precision": 0.9786501377410468,
+            "decision": "left",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    358,
+                    201,
+                    155,
+                    413,
+                    325
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    358,
+                    197,
+                    142,
+                    406,
+                    318
+                ],
+                "precisions": [
+                    1.0,
+                    0.9800995024875622,
+                    0.9161290322580645,
+                    0.9830508474576272,
+                    0.9784615384615385
+                ],
+                "cv": 0.03308962870292001,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9391900847649519,
+                "cramers_v": 0.011822443250199004,
+                "residuals": [
+                    0.4083408796545941,
+                    0.020771219325552603,
+                    -0.7868261167290739,
+                    0.09040324450209879,
+                    -0.003436908569938387
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Emph=\"No\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Emph=\"No\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 855,
+            "pos occs": 4,
+            "neg occs": 851,
+            "rule_precision": 0.9953216374269006,
+            "decision": "left",
+            "alpha": 0.006000000000000005,
+            "stats": {
+                "p_lang_occs": [
+                    855,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    851,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    0.9953216374269006,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[Gender=\"Fem\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Gender=\"Fem\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 15558,
+            "pos occs": 15032,
+            "neg occs": 526,
+            "rule_precision": 0.966191027124309,
+            "decision": "right",
+            "alpha": 0.0050000000000000044,
+            "stats": {
+                "p_lang_occs": [
+                    2649,
+                    2980,
+                    2867,
+                    4296,
+                    2766
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    2576,
+                    2906,
+                    2833,
+                    4041,
+                    2676
+                ],
+                "precisions": [
+                    0.9724424311060778,
+                    0.9751677852348993,
+                    0.988140913847227,
+                    0.9406424581005587,
+                    0.9674620390455532
+                ],
+                "cv": 0.01804582820390315,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.32036129521105294,
+                "cramers_v": 0.008833850761733911,
+                "residuals": [
+                    0.32733092986133727,
+                    0.49853557529332315,
+                    1.1956790774341965,
+                    -1.7035983731735902,
+                    0.06800552722092341
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[upos=\"PRON\"]}\npattern {X[Person=\"3\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[upos=\"PRON\"]}%0Apattern {X[Person=\"3\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 2884,
+            "pos occs": 341,
+            "neg occs": 2543,
+            "rule_precision": 0.8817614424410541,
+            "decision": "left",
+            "alpha": 0.0050000000000000044,
+            "stats": {
+                "p_lang_occs": [
+                    559,
+                    367,
+                    487,
+                    607,
+                    864
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    519,
+                    313,
+                    357,
+                    551,
+                    803
+                ],
+                "precisions": [
+                    0.9284436493738819,
+                    0.8528610354223434,
+                    0.7330595482546202,
+                    0.9077429983525536,
+                    0.9293981481481481
+                ],
+                "cv": 0.09512379355105634,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.002280375890708495,
+                "cramers_v": 0.04043376177651695,
+                "residuals": [
+                    1.1753892957995573,
+                    -0.5896053821027593,
+                    -3.4946640245272977,
+                    0.6816853312825898,
+                    1.4911558601387538
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[Tense=\"Pres\"]}\npattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[Tense=\"Pres\"]}%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1176,
+            "pos occs": 31,
+            "neg occs": 1145,
+            "rule_precision": 0.9736394557823129,
+            "decision": "left",
+            "alpha": 0.0050000000000000044,
+            "stats": {
+                "p_lang_occs": [
+                    350,
+                    191,
+                    75,
+                    386,
+                    174
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    345,
+                    179,
+                    71,
+                    381,
+                    169
+                ],
+                "precisions": [
+                    0.9857142857142858,
+                    0.93717277486911,
+                    0.9466666666666667,
+                    0.9870466321243523,
+                    0.9712643678160919
+                ],
+                "cv": 0.023521001400159815,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9789317125815202,
+                "cramers_v": 0.009819300639640316,
+                "residuals": [
+                    0.22893698673840404,
+                    -0.5107564245364717,
+                    -0.23673223926154105,
+                    0.26695120862873556,
+                    -0.03175084156754686
+                ]
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[Number=\"Plur\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[Number=\"Plur\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 9668,
+            "pos occs": 9612,
+            "neg occs": 56,
+            "rule_precision": 0.9942076954902772,
+            "decision": "right",
+            "alpha": 0.0040000000000000036,
+            "stats": {
+                "p_lang_occs": [
+                    2255,
+                    2285,
+                    1730,
+                    1675,
+                    1723
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    2253,
+                    2273,
+                    1725,
+                    1647,
+                    1714
+                ],
+                "precisions": [
+                    0.9991130820399113,
+                    0.9947483588621444,
+                    0.9971098265895953,
+                    0.9832835820895522,
+                    0.9947765525246662
+                ],
+                "cv": 0.00619531284203476,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9915777699347353,
+                "cramers_v": 0.0026574375659317653,
+                "residuals": [
+                    0.23361888607946285,
+                    0.025919790715325103,
+                    0.12106023663784057,
+                    -0.4483890985653196,
+                    0.02368139116132783
+                ]
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[Person=\"3\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[Person=\"3\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 11062,
+            "pos occs": 9197,
+            "neg occs": 1865,
+            "rule_precision": 0.16859519074308443,
+            "decision": "left",
+            "alpha": 0.0040000000000000036,
+            "stats": {
+                "p_lang_occs": [
+                    2313,
+                    1983,
+                    1351,
+                    3306,
+                    2109
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    451,
+                    283,
+                    127,
+                    567,
+                    437
+                ],
+                "precisions": [
+                    0.1949848681366191,
+                    0.1427130610186586,
+                    0.09400444115470022,
+                    0.17150635208711434,
+                    0.2072072072072072
+                ],
+                "cv": 0.27964016621220095,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 1.1598003827280103e-16,
+                "cramers_v": 0.10409420380503581,
+                "residuals": [
+                    3.0910021454331846,
+                    -2.8069764933589516,
+                    -6.677133432671318,
+                    0.40765719271533524,
+                    4.318552280694128
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Ind\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Ind\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 397,
+            "pos occs": 362,
+            "neg occs": 35,
+            "rule_precision": 0.9118387909319899,
+            "decision": "right",
+            "alpha": 0.0030000000000000027,
+            "stats": {
+                "p_lang_occs": [
+                    55,
+                    77,
+                    132,
+                    67,
+                    66
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    47,
+                    71,
+                    130,
+                    56,
+                    58
+                ],
+                "precisions": [
+                    0.8545454545454545,
+                    0.922077922077922,
+                    0.9848484848484849,
+                    0.835820895522388,
+                    0.8787878787878788
+                ],
+                "cv": 0.06657296251190227,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.8297957311493399,
+                "cramers_v": 0.031993678479438285,
+                "residuals": [
+                    -0.4449655887730462,
+                    0.0940912929297094,
+                    0.8784326337612106,
+                    -0.6516197085152168,
+                    -0.28118774285429327
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Person=\"3\"]}\npattern {X[VerbForm=\"Fin\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Person=\"3\"]}%0Apattern {X[VerbForm=\"Fin\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1764,
+            "pos occs": 198,
+            "neg occs": 1566,
+            "rule_precision": 0.8877551020408163,
+            "decision": "left",
+            "alpha": 0.0030000000000000027,
+            "stats": {
+                "p_lang_occs": [
+                    399,
+                    217,
+                    173,
+                    666,
+                    309
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    358,
+                    204,
+                    130,
+                    571,
+                    303
+                ],
+                "precisions": [
+                    0.8972431077694235,
+                    0.9400921658986175,
+                    0.7514450867052023,
+                    0.8573573573573574,
+                    0.9805825242718447
+                ],
+                "cv": 0.09930890548928935,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.09072692018035809,
+                "cramers_v": 0.03578917997209689,
+                "residuals": [
+                    0.2011475733583893,
+                    0.8182624714062541,
+                    -1.9028485767958103,
+                    -0.8325913394508327,
+                    1.7318446875342115
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Person=\"3\"]}\npattern {X[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Person=\"3\"]}%0Apattern {X[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1515,
+            "pos occs": 172,
+            "neg occs": 1343,
+            "rule_precision": 0.8864686468646865,
+            "decision": "left",
+            "alpha": 0.0030000000000000027,
+            "stats": {
+                "p_lang_occs": [
+                    371,
+                    241,
+                    138,
+                    499,
+                    266
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    333,
+                    232,
+                    104,
+                    415,
+                    259
+                ],
+                "precisions": [
+                    0.8975741239892183,
+                    0.9626556016597511,
+                    0.7536231884057971,
+                    0.8316633266533067,
+                    0.9736842105263158
+                ],
+                "cv": 0.10454424303787499,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.07956011389562577,
+                "cramers_v": 0.039425799129627695,
+                "residuals": [
+                    0.22719171335574517,
+                    1.2561961165349753,
+                    -1.6575039239195724,
+                    -1.300293233151704,
+                    1.5107865865874057
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}\npattern {X[Mood=\"Ind\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}%0Apattern {X[Mood=\"Ind\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1485,
+            "pos occs": 39,
+            "neg occs": 1446,
+            "rule_precision": 0.9737373737373738,
+            "decision": "left",
+            "alpha": 0.0030000000000000027,
+            "stats": {
+                "p_lang_occs": [
+                    370,
+                    226,
+                    153,
+                    425,
+                    311
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    370,
+                    223,
+                    136,
+                    413,
+                    304
+                ],
+                "precisions": [
+                    1.0,
+                    0.9867256637168141,
+                    0.8888888888888888,
+                    0.971764705882353,
+                    0.977491961414791
+                ],
+                "cv": 0.0454428761129218,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.8374536490847928,
+                "cramers_v": 0.01577105123932805,
+                "residuals": [
+                    0.5119388585187468,
+                    0.19787242495173626,
+                    -1.0635768778885595,
+                    -0.041212362681953336,
+                    0.06709984629270403
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Rel\"]}\npattern {Xparent->X;Xparent << X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Rel\"]}%0Apattern {Xparent->X;Xparent << X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1443,
+            "pos occs": 8,
+            "neg occs": 1435,
+            "rule_precision": 0.9944559944559944,
+            "decision": "left",
+            "alpha": 0.0030000000000000027,
+            "stats": {
+                "p_lang_occs": [
+                    292,
+                    246,
+                    275,
+                    0,
+                    630
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    292,
+                    238,
+                    275,
+                    0,
+                    630
+                ],
+                "precisions": [
+                    1.0,
+                    0.967479674796748,
+                    1.0,
+                    0,
+                    1.0
+                ],
+                "cv": 0.5592986103158216,
+                "contains_zero": true,
+                "significance": "common",
+                "pvalue": 0.974797072388737,
+                "cramers_v": 0.007099977627223346,
+                "residuals": [
+                    0.09499971373804866,
+                    -0.4242847944473909,
+                    0.0921928451380174,
+                    -25.030127376968668
+                ]
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[upos=\"AUX\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[upos=\"AUX\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 5394,
+            "pos occs": 4494,
+            "neg occs": 900,
+            "rule_precision": 0.1668520578420467,
+            "decision": "left",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    945,
+                    1700,
+                    505,
+                    1409,
+                    835
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    182,
+                    240,
+                    51,
+                    235,
+                    192
+                ],
+                "precisions": [
+                    0.1925925925925926,
+                    0.1411764705882353,
+                    0.100990099009901,
+                    0.16678495386799147,
+                    0.22994011976047904
+                ],
+                "cv": 0.29517760135186166,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 8.084519903332496e-09,
+                "cramers_v": 0.10994504207048342,
+                "residuals": [
+                    1.9371697807625383,
+                    -2.5916661871462274,
+                    -3.623385554091633,
+                    -0.006166488895470208,
+                    4.462976911086081
+                ]
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[upos=\"VERB\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[upos=\"VERB\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4158,
+            "pos occs": 4137,
+            "neg occs": 21,
+            "rule_precision": 0.9949494949494949,
+            "decision": "right",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    794,
+                    791,
+                    738,
+                    808,
+                    1027
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    792,
+                    789,
+                    738,
+                    796,
+                    1022
+                ],
+                "precisions": [
+                    0.9974811083123426,
+                    0.9974715549936789,
+                    1.0,
+                    0.9851485148514851,
+                    0.9951314508276533
+                ],
+                "cv": 0.005823731183472267,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9986154652858683,
+                "cramers_v": 0.0025444528013995045,
+                "residuals": [
+                    0.07151664171860239,
+                    0.07111204134053357,
+                    0.13755059479437742,
+                    -0.2793024014218223,
+                    0.005845892085337708
+                ]
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[Case=\"Acc\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[Case=\"Acc\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1725,
+            "pos occs": 1297,
+            "neg occs": 428,
+            "rule_precision": 0.24811594202898551,
+            "decision": "left",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    4,
+                    1319,
+                    402
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    1,
+                    317,
+                    110
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0.25,
+                    0.2403335860500379,
+                    0.2736318407960199
+                ],
+                "cv": 0.916306787102997,
+                "contains_zero": true,
+                "significance": "low frequency",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[PronType=\"Art\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[PronType=\"Art\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 15149,
+            "pos occs": 15089,
+            "neg occs": 60,
+            "rule_precision": 0.9960393425308601,
+            "decision": "right",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    4112,
+                    4474,
+                    3172,
+                    8,
+                    3383
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    4112,
+                    4460,
+                    3169,
+                    8,
+                    3340
+                ],
+                "precisions": [
+                    1.0,
+                    0.9968708091193563,
+                    0.9990542244640606,
+                    1.0,
+                    0.9872893881170559
+                ],
+                "cv": 0.005400854898849896,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9858453387430922,
+                "cramers_v": 0.002431978465601064,
+                "residuals": [
+                    0.25448113396410127,
+                    0.05572557336936741,
+                    0.17013695354526318,
+                    0.011224681630736267,
+                    -0.5099393697038979
+                ]
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4756,
+            "pos occs": 3741,
+            "neg occs": 1015,
+            "rule_precision": 0.21341463414634146,
+            "decision": "left",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    1475,
+                    560,
+                    529,
+                    1392,
+                    800
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    298,
+                    104,
+                    116,
+                    290,
+                    207
+                ],
+                "precisions": [
+                    0.20203389830508475,
+                    0.18571428571428572,
+                    0.21928166351606806,
+                    0.20833333333333334,
+                    0.25875
+                ],
+                "cv": 0.12753465954208268,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.02810309581968331,
+                "cramers_v": 0.051735281042222456,
+                "residuals": [
+                    -0.9461374978749855,
+                    -1.4189501794450496,
+                    0.29210164322865506,
+                    -0.41037644540764256,
+                    2.7756839882788285
+                ]
+            }
+        },
+        {
+            "rule": "with {X-[mark]->Xchild}\npattern {X[VerbForm=\"Inf\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[mark]->Xchild}%0Apattern {X[VerbForm=\"Inf\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 6255,
+            "pos occs": 5947,
+            "neg occs": 308,
+            "rule_precision": 0.9507593924860112,
+            "decision": "right",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    1515,
+                    1653,
+                    1128,
+                    530,
+                    1429
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    1289,
+                    1650,
+                    1105,
+                    497,
+                    1406
+                ],
+                "precisions": [
+                    0.8508250825082508,
+                    0.9981851179673321,
+                    0.9796099290780141,
+                    0.9377358490566038,
+                    0.9839048285514346
+                ],
+                "cv": 0.06300986378431227,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.00015518761693916608,
+                "cramers_v": 0.030794023118514494,
+                "residuals": [
+                    -3.9891982724910364,
+                    1.9774936502869835,
+                    0.9937408265522458,
+                    -0.30749055841082223,
+                    1.2850041764307876
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Inf\"]}\npattern {Y[Gender=\"Masc\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Inf\"]}%0Apattern {Y[Gender=\"Masc\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4541,
+            "pos occs": 4418,
+            "neg occs": 123,
+            "rule_precision": 0.9729134551860824,
+            "decision": "right",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    954,
+                    1298,
+                    1031,
+                    259,
+                    999
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    887,
+                    1291,
+                    1018,
+                    236,
+                    986
+                ],
+                "precisions": [
+                    0.929769392033543,
+                    0.9946070878274268,
+                    0.9873908826382153,
+                    0.9111969111969112,
+                    0.986986986986987
+                ],
+                "cv": 0.040098861021569725,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.420742810103901,
+                "cramers_v": 0.014841379878934332,
+                "residuals": [
+                    -1.3510086371307726,
+                    0.7923782078644669,
+                    0.4712850084993239,
+                    -1.006964999933231,
+                    0.45097112764202263
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Part\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Part\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 801,
+            "pos occs": 90,
+            "neg occs": 711,
+            "rule_precision": 0.8876404494382022,
+            "decision": "left",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    230,
+                    192,
+                    13,
+                    226,
+                    140
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    214,
+                    175,
+                    10,
+                    183,
+                    129
+                ],
+                "precisions": [
+                    0.9304347826086956,
+                    0.9114583333333334,
+                    0.7692307692307693,
+                    0.8097345132743363,
+                    0.9214285714285714
+                ],
+                "cv": 0.08498755070884038,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.6396398295026527,
+                "cramers_v": 0.029813884554876036,
+                "residuals": [
+                    0.6888610656834845,
+                    0.35029605463108704,
+                    -0.45314828640705457,
+                    -1.2431004621905903,
+                    0.42433565884379404
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Fin\"]}\npattern {Y[Case=\"Acc\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Fin\"]}%0Apattern {Y[Case=\"Acc\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1041,
+            "pos occs": 51,
+            "neg occs": 990,
+            "rule_precision": 0.9510086455331412,
+            "decision": "left",
+            "alpha": 0.0020000000000000018,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    155,
+                    530,
+                    356
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    143,
+                    497,
+                    350
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0.9225806451612903,
+                    0.9377358490566038,
+                    0.9831460674157303
+                ],
+                "cv": 0.9137116778563964,
+                "contains_zero": true,
+                "significance": "common",
+                "pvalue": 0.7347250734604114,
+                "cramers_v": 0.017645753758743558,
+                "residuals": [
+                    -12.141101270380577,
+                    -22.45071451274023,
+                    -10.628225225443666
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Xparent-[advcl]->X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Xparent-[advcl]->X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 5843,
+            "pos occs": 5359,
+            "neg occs": 484,
+            "rule_precision": 0.9171658394660277,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    991,
+                    1256,
+                    893,
+                    1181,
+                    1522
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    853,
+                    1192,
+                    868,
+                    1047,
+                    1399
+                ],
+                "precisions": [
+                    0.8607467204843592,
+                    0.9490445859872612,
+                    0.9720044792833147,
+                    0.88653683319221,
+                    0.919185282522996
+                ],
+                "cv": 0.04919211791211812,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.061755908436901354,
+                "cramers_v": 0.020460584616765864,
+                "residuals": [
+                    -1.8545527554559913,
+                    1.1797014707195388,
+                    1.7111515238248671,
+                    -1.0990916798081682,
+                    0.08226498115529692
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Xparent-[ccomp]->X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Xparent-[ccomp]->X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 2698,
+            "pos occs": 2318,
+            "neg occs": 380,
+            "rule_precision": 0.14084507042253522,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    332,
+                    409,
+                    402,
+                    888,
+                    667
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    45,
+                    32,
+                    29,
+                    166,
+                    108
+                ],
+                "precisions": [
+                    0.1355421686746988,
+                    0.07823960880195599,
+                    0.07213930348258707,
+                    0.18693693693693694,
+                    0.1619190404797601
+                ],
+                "cv": 0.3991594580029349,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 3.545935667491055e-08,
+                "cramers_v": 0.163068113618426,
+                "residuals": [
+                    -0.25746120454925836,
+                    -3.373673505634667,
+                    -3.6705859064901114,
+                    3.6598219094766256,
+                    1.450235226337798
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Part\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Part\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4535,
+            "pos occs": 3779,
+            "neg occs": 756,
+            "rule_precision": 0.16670341786108048,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    1445,
+                    1137,
+                    175,
+                    1194,
+                    584
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    214,
+                    183,
+                    11,
+                    211,
+                    137
+                ],
+                "precisions": [
+                    0.14809688581314878,
+                    0.16094986807387862,
+                    0.06285714285714286,
+                    0.17671691792294808,
+                    0.2345890410958904
+                ],
+                "cv": 0.39567730782979144,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 2.5248148805949552e-06,
+                "cramers_v": 0.10191634099224979,
+                "residuals": [
+                    -1.7323159608168892,
+                    -0.4751643568851959,
+                    -3.364632961587797,
+                    0.8474533800092218,
+                    4.018018952863263
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Strength=\"Weak\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Strength=\"Weak\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 815,
+            "pos occs": 97,
+            "neg occs": 718,
+            "rule_precision": 0.8809815950920246,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    815,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    718,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0.8809815950920246,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 17986,
+            "pos occs": 15070,
+            "neg occs": 2916,
+            "rule_precision": 0.16212609807628156,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    3663,
+                    3587,
+                    3238,
+                    4051,
+                    3447
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    727,
+                    451,
+                    306,
+                    705,
+                    727
+                ],
+                "precisions": [
+                    0.19847119847119848,
+                    0.1257318093114023,
+                    0.09450277949351452,
+                    0.17403110343125155,
+                    0.21090803597331012
+                ],
+                "cv": 0.3068554218480469,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 3.819672200142847e-43,
+                "cramers_v": 0.13244865722442262,
+                "residuals": [
+                    5.46308385701242,
+                    -5.413429180821643,
+                    -9.556710642717464,
+                    1.881846741573527,
+                    7.113006824805131
+                ]
+            }
+        },
+        {
+            "rule": "with {X->Xchild;Xchild[Gender=\"Fem\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X->Xchild;Xchild[Gender=\"Fem\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 9145,
+            "pos occs": 7662,
+            "neg occs": 1483,
+            "rule_precision": 0.16216511755057408,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    1699,
+                    1798,
+                    1622,
+                    2590,
+                    1436
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    355,
+                    212,
+                    148,
+                    458,
+                    310
+                ],
+                "precisions": [
+                    0.20894643908181282,
+                    0.11790878754171301,
+                    0.09124537607891492,
+                    0.17683397683397684,
+                    0.21587743732590528
+                ],
+                "cv": 0.3416366266001828,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 7.705558020517685e-26,
+                "cramers_v": 0.14454324499281251,
+                "residuals": [
+                    4.788400361423066,
+                    -4.660060123756458,
+                    -7.092736863991997,
+                    1.8538197466360764,
+                    5.054432590053534
+                ]
+            }
+        },
+        {
+            "rule": "with {X-[aux]->Xchild}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[aux]->Xchild}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4278,
+            "pos occs": 3581,
+            "neg occs": 697,
+            "rule_precision": 0.16292660121552127,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    6,
+                    1687,
+                    366,
+                    1401,
+                    818
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    234,
+                    42,
+                    232,
+                    189
+                ],
+                "precisions": [
+                    0.0,
+                    0.13870776526378187,
+                    0.11475409836065574,
+                    0.1655960028551035,
+                    0.2310513447432763
+                ],
+                "cv": 0.6513194698800018,
+                "contains_zero": false,
+                "significance": "low frequency",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "with {X-[expl]->Xchild}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[expl]->Xchild}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 564,
+            "pos occs": 306,
+            "neg occs": 258,
+            "rule_precision": 0.4574468085106383,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    108,
+                    19,
+                    398,
+                    39
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    25,
+                    0,
+                    224,
+                    9
+                ],
+                "precisions": [
+                    0,
+                    0.23148148148148148,
+                    0.0,
+                    0.5628140703517588,
+                    0.23076923076923078
+                ],
+                "cv": 1.126763940901467,
+                "contains_zero": true,
+                "significance": "distinctive",
+                "pvalue": 1.351482192918112e-07,
+                "cramers_v": 0.21199993679219428,
+                "residuals": [
+                    -7.028816068097738,
+                    5.531809295908919,
+                    -13.493103045157332,
+                    48.80911179204002
+                ]
+            }
+        },
+        {
+            "rule": "with {X-[advmod]->Xchild}\npattern {Y[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[advmod]->Xchild}%0Apattern {Y[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4188,
+            "pos occs": 3764,
+            "neg occs": 424,
+            "rule_precision": 0.8987583572110793,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    775,
+                    793,
+                    857,
+                    972,
+                    791
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    700,
+                    728,
+                    826,
+                    815,
+                    695
+                ],
+                "precisions": [
+                    0.9032258064516129,
+                    0.9180327868852459,
+                    0.9638273045507585,
+                    0.838477366255144,
+                    0.8786346396965866
+                ],
+                "cv": 0.05164460512750773,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.06993884264024951,
+                "cramers_v": 0.02399491251314255,
+                "residuals": [
+                    0.13118645821605052,
+                    0.5725279049909213,
+                    2.009290454390122,
+                    -1.982403449055882,
+                    -0.5970008963483537
+                ]
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[Number=\"Sing\"]}\npattern {Xparent->X;Xparent << X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[Number=\"Sing\"]}%0Apattern {Xparent->X;Xparent << X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 12587,
+            "pos occs": 12507,
+            "neg occs": 80,
+            "rule_precision": 0.9936442361166282,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    2772,
+                    2602,
+                    2308,
+                    1915,
+                    2990
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    2772,
+                    2593,
+                    2306,
+                    1893,
+                    2943
+                ],
+                "precisions": [
+                    1.0,
+                    0.9965411222136817,
+                    0.9991334488734835,
+                    0.9885117493472585,
+                    0.9842809364548495
+                ],
+                "cv": 0.006988872829927538,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9716011811916377,
+                "cramers_v": 0.003221642268329191,
+                "residuals": [
+                    0.33569811988542864,
+                    0.14824143376838309,
+                    0.26455288830322143,
+                    -0.22531845718196533,
+                    -0.5136284342078908
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Gender=\"Masc\"]}\npattern {Xparent->X;Xparent << X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Gender=\"Masc\"]}%0Apattern {Xparent->X;Xparent << X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 9610,
+            "pos occs": 8934,
+            "neg occs": 676,
+            "rule_precision": 0.9296566077003122,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    2000,
+                    2148,
+                    1902,
+                    1309,
+                    2251
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    1877,
+                    2022,
+                    1825,
+                    1103,
+                    2107
+                ],
+                "precisions": [
+                    0.9385,
+                    0.9413407821229051,
+                    0.9595162986330179,
+                    0.8426279602750191,
+                    0.9360284318080853
+                ],
+                "cv": 0.05002122417564164,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.01093567940790165,
+                "cramers_v": 0.0191247461310394,
+                "residuals": [
+                    0.4101782318813716,
+                    0.5616346449773303,
+                    1.3506078955629435,
+                    -3.265658572750032,
+                    0.3135380449519708
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Xparent->X;Xparent << X}\npattern {Xparent-[advcl]->X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Xparent->X;Xparent << X}%0Apattern {Xparent-[advcl]->X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 4715,
+            "pos occs": 4332,
+            "neg occs": 383,
+            "rule_precision": 0.9187698833510074,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    791,
+                    961,
+                    692,
+                    937,
+                    1334
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    679,
+                    923,
+                    677,
+                    825,
+                    1228
+                ],
+                "precisions": [
+                    0.8584070796460177,
+                    0.9604578563995838,
+                    0.9783236994219653,
+                    0.880469583778015,
+                    0.9205397301349325
+                ],
+                "cv": 0.05543111773106377,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.05801263628789725,
+                "cramers_v": 0.02294982983338654,
+                "residuals": [
+                    -1.771145621349418,
+                    1.348245867410693,
+                    1.6344034376747616,
+                    -1.2231186573150716,
+                    0.06743885845968509
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Xparent->X;Xparent << X}\nwith {X->Xchild;Xchild[Number=\"Sing\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Xparent->X;Xparent << X}%0Awith {X->Xchild;Xchild[Number=\"Sing\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 9402,
+            "pos occs": 7211,
+            "neg occs": 2191,
+            "rule_precision": 0.2330355243565199,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    1938,
+                    1777,
+                    1332,
+                    1945,
+                    2410
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    548,
+                    330,
+                    228,
+                    480,
+                    605
+                ],
+                "precisions": [
+                    0.28276573787409703,
+                    0.18570624648283623,
+                    0.17117117117117117,
+                    0.2467866323907455,
+                    0.25103734439834025
+                ],
+                "cv": 0.2073455034764828,
+                "contains_zero": false,
+                "significance": "distinctive",
+                "pvalue": 3.353491834238105e-13,
+                "cramers_v": 0.08575777857136059,
+                "residuals": [
+                    4.535092451109927,
+                    -4.1329726069694335,
+                    -4.677152426708917,
+                    1.2562799586363187,
+                    1.8306860484691478
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Gender=\"Fem\"]}\npattern {Xparent->X;Xparent << X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Gender=\"Fem\"]}%0Apattern {Xparent->X;Xparent << X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 10116,
+            "pos occs": 9729,
+            "neg occs": 387,
+            "rule_precision": 0.9617437722419929,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    1757,
+                    1921,
+                    1668,
+                    2640,
+                    2130
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    1691,
+                    1879,
+                    1648,
+                    2454,
+                    2057
+                ],
+                "precisions": [
+                    0.9624359704040979,
+                    0.9781363872982821,
+                    0.988009592326139,
+                    0.9295454545454546,
+                    0.9657276995305164
+                ],
+                "cv": 0.022978592401319366,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.3291138695768419,
+                "cramers_v": 0.010889995576132579,
+                "residuals": [
+                    0.029586025772263325,
+                    0.7326258388290939,
+                    1.0938538428986475,
+                    -1.6869625956903003,
+                    0.18748715275859928
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[PrepCase=\"Npr\"]}\npattern {X[VerbForm=\"Inf\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PrepCase=\"Npr\"]}%0Apattern {X[VerbForm=\"Inf\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 242,
+            "pos occs": 230,
+            "neg occs": 12,
+            "rule_precision": 0.9504132231404959,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    242
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    230
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.9504132231404959
+                ],
+                "cv": 2.23606797749979,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "with {X-[expl]->Xchild}\npattern {Y[upos=\"NOUN\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {X-[expl]->Xchild}%0Apattern {Y[upos=\"NOUN\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 257,
+            "pos occs": 205,
+            "neg occs": 52,
+            "rule_precision": 0.20233463035019456,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    74,
+                    9,
+                    148,
+                    26
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    1,
+                    0,
+                    50,
+                    1
+                ],
+                "precisions": [
+                    0,
+                    0.013513513513513514,
+                    0.0,
+                    0.33783783783783783,
+                    0.038461538461538464
+                ],
+                "cv": 1.8742465152695365,
+                "contains_zero": true,
+                "significance": "low frequency",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "with {Y->Ychild;Ychild[Number=\"Sing\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Awith {Y->Ychild;Ychild[Number=\"Sing\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 335,
+            "pos occs": 298,
+            "neg occs": 37,
+            "rule_precision": 0.8895522388059701,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    45,
+                    74,
+                    111,
+                    38,
+                    67
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    44,
+                    72,
+                    111,
+                    33,
+                    38
+                ],
+                "precisions": [
+                    0.9777777777777777,
+                    0.972972972972973,
+                    1.0,
+                    0.868421052631579,
+                    0.5671641791044776
+                ],
+                "cv": 0.20594704940322442,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.035042870615509515,
+                "cramers_v": 0.09314645770070092,
+                "residuals": [
+                    0.6275016159034359,
+                    0.7608589244249236,
+                    1.2337656593103732,
+                    -0.13811153309382865,
+                    -2.797889904814535
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[upos=\"PRON\"]}\nwith {X->Xchild;Xchild[upos=\"AUX\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[upos=\"PRON\"]}%0Awith {X->Xchild;Xchild[upos=\"AUX\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 1037,
+            "pos occs": 193,
+            "neg occs": 844,
+            "rule_precision": 0.8138862102217936,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    192,
+                    299,
+                    81,
+                    252,
+                    213
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    182,
+                    226,
+                    50,
+                    206,
+                    180
+                ],
+                "precisions": [
+                    0.9479166666666666,
+                    0.7558528428093646,
+                    0.6172839506172839,
+                    0.8174603174603174,
+                    0.8450704225352113
+                ],
+                "cv": 0.15307669456802436,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.04812219477809073,
+                "cramers_v": 0.053270825904818214,
+                "residuals": [
+                    2.0586014096585568,
+                    -1.1123245445641612,
+                    -1.9613232171106678,
+                    0.06289063855604489,
+                    0.504478584948448
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[Tense=\"Pres\"]}\npattern {Y[Case=\"Acc\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[Tense=\"Pres\"]}%0Apattern {Y[Case=\"Acc\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 613,
+            "pos occs": 11,
+            "neg occs": 602,
+            "rule_precision": 0.9820554649265906,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    65,
+                    376,
+                    172
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    63,
+                    371,
+                    168
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0.9692307692307692,
+                    0.9867021276595744,
+                    0.9767441860465116
+                ],
+                "cv": 0.9129320720348658,
+                "contains_zero": true,
+                "significance": "common",
+                "pvalue": 0.9880255015163816,
+                "cramers_v": 0.004473393160907307,
+                "residuals": [
+                    -7.989593557886932,
+                    -19.215953133071437,
+                    -8.14928022581443
+                ]
+            }
+        },
+        {
+            "rule": "pattern {Y[Case=\"Acc\"]}\npattern {X[Person=\"3\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Case=\"Acc\"]}%0Apattern {X[Person=\"3\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 859,
+            "pos occs": 19,
+            "neg occs": 840,
+            "rule_precision": 0.9778812572759022,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    142,
+                    395,
+                    322
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    133,
+                    390,
+                    317
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0.9366197183098591,
+                    0.9873417721518988,
+                    0.984472049689441
+                ],
+                "cv": 0.9135277484234672,
+                "contains_zero": true,
+                "significance": "common",
+                "pvalue": 0.8617062625194492,
+                "cramers_v": 0.013311328380355699,
+                "residuals": [
+                    -11.78385075148095,
+                    -19.653577196632202,
+                    -10.249639989546184
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[Tense=\"Past\"]}\npattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[Tense=\"Past\"]}%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 552,
+            "pos occs": 14,
+            "neg occs": 538,
+            "rule_precision": 0.9746376811594203,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    140,
+                    148,
+                    64,
+                    48,
+                    152
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    140,
+                    145,
+                    56,
+                    47,
+                    150
+                ],
+                "precisions": [
+                    1.0,
+                    0.9797297297297297,
+                    0.875,
+                    0.9791666666666666,
+                    0.9868421052631579
+                ],
+                "cv": 0.052416631235135486,
+                "contains_zero": false,
+                "significance": "common",
+                "pvalue": 0.9420990496369138,
+                "cramers_v": 0.01894620805768994,
+                "residuals": [
+                    0.303970457279595,
+                    0.06274827572459758,
+                    -0.8074060508850999,
+                    0.03178337051071698,
+                    0.15241141178665688
+                ]
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Part\"]}\npattern {Y[PronType=\"Prs\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Part\"]}%0Apattern {Y[PronType=\"Prs\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 493,
+            "pos occs": 34,
+            "neg occs": 459,
+            "rule_precision": 0.9310344827586207,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    152,
+                    121,
+                    2,
+                    165,
+                    53
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    152,
+                    119,
+                    2,
+                    134,
+                    52
+                ],
+                "precisions": [
+                    1.0,
+                    0.9834710743801653,
+                    1.0,
+                    0.8121212121212121,
+                    0.9811320754716981
+                ],
+                "cv": 0.08432164884505527,
+                "contains_zero": false,
+                "significance": "low frequency",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[Definite=\"Ind\"]}\npattern {Y[upos=\"NOUN\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Definite=\"Ind\"]}%0Apattern {Y[upos=\"NOUN\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 2590,
+            "pos occs": 2524,
+            "neg occs": 66,
+            "rule_precision": 0.9745173745173745,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    2590,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    2524,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0.9745173745173745,
+                    0
+                ],
+                "cv": 2.23606797749979,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Prs\"]}\npattern {Y[Strength=\"Weak\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Prs\"]}%0Apattern {Y[Strength=\"Weak\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 815,
+            "pos occs": 97,
+            "neg occs": 718,
+            "rule_precision": 0.8809815950920246,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    815,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    718,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0.8809815950920246,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Int,Rel\"]}\npattern {Y[Case=\"Acc,Nom\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Int,Rel\"]}%0Apattern {Y[Case=\"Acc,Nom\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 228,
+            "pos occs": 2,
+            "neg occs": 226,
+            "rule_precision": 0.9912280701754386,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    228,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    226,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0.9912280701754386,
+                    0
+                ],
+                "cv": 2.23606797749979,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[PronType=\"Int,Rel\"]}\npattern {Y[upos=\"PRON\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[PronType=\"Int,Rel\"]}%0Apattern {Y[upos=\"PRON\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 228,
+            "pos occs": 2,
+            "neg occs": 226,
+            "rule_precision": 0.9912280701754386,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    228,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    0,
+                    0,
+                    226,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0,
+                    0,
+                    0.9912280701754386,
+                    0
+                ],
+                "cv": 2.23606797749979,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {X[VerbForm=\"Inf\"]}\npattern {Y[Clitic=\"Yes\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {X[VerbForm=\"Inf\"]}%0Apattern {Y[Clitic=\"Yes\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 232,
+            "pos occs": 224,
+            "neg occs": 8,
+            "rule_precision": 0.9655172413793104,
+            "decision": "right",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    0,
+                    232,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    0,
+                    224,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    0,
+                    0.9655172413793104,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[Emph=\"No\"]}\npattern {Xparent->X;Xparent << X}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Emph=\"No\"]}%0Apattern {Xparent->X;Xparent << X}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 644,
+            "pos occs": 1,
+            "neg occs": 643,
+            "rule_precision": 0.9984472049689441,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    644,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    643,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    0.9984472049689441,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997894,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        },
+        {
+            "rule": "pattern {Y[Person=\"3\"]}\npattern {Y[Emph=\"No\"]}",
+            "grew-match": "https://universal.grew.fr/?pattern=pattern { X-[obj]->Y; X[upos=VERB] }%0Apattern {Y[Person=\"3\"]}%0Apattern {Y[Emph=\"No\"]}&whether=X << Y&corpus_list=UD_French-GSD@2.15,bUD_Italian-ISDT@2.15,bUD_Portuguese-Porttinari@2.15,UD_Romanian-RRT@2.15,bUD_Spanish-AnCora@2.15",
+            "p occs": 790,
+            "pos occs": 0,
+            "neg occs": 790,
+            "rule_precision": 1.0,
+            "decision": "left",
+            "alpha": 0.001,
+            "stats": {
+                "p_lang_occs": [
+                    790,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "q_lang_occs": [
+                    5717,
+                    6588,
+                    6700,
+                    6264,
+                    6101
+                ],
+                "p_q_lang_occs": [
+                    790,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "precisions": [
+                    1.0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "cv": 2.2360679774997902,
+                "contains_zero": true,
+                "significance": "unique",
+                "pvalue": null,
+                "cramers_v": null,
+                "residuals": null
+            }
+        }
+    ]
+}

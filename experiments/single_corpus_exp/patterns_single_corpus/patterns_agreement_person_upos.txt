@@ -1,0 +1,17 @@
+scope: pattern { X[Person]; Y[Person]; X->Y }
+conclusion: X.Person = Y.Person
+
+templates:
+    base:
+        own:
+            method: include
+            regexp: ["upos", "rel_shallow", "rel_deep"]
+            lemma_top_k: 0
+
+features:
+    X:
+        own:
+            method: include
+            regexp: ["upos"]
+            lemma_top_k: 0
+    Y: base

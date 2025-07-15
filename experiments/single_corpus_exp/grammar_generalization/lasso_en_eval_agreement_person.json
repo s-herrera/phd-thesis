@@ -1,0 +1,56 @@
+{
+    "SUD_English-GUM": {
+        "f1_macro": 0.962412741305609,
+        "f1_gain": 0.500303667660128,
+        "precision_minority": 0.935054773082942,
+        "recall_minority": 0.9357870007830854,
+        "amp": 0.9408144450068316,
+        "global_coverage": 0.9990070609002648,
+        "rules_missed": 0
+    },
+    "SUD_English-GUM/test": {
+        "f1_macro": 0.9373030472560157,
+        "f1_gain": 0.4752717230984457,
+        "precision_minority": 0.8765060240963856,
+        "recall_minority": 0.909375,
+        "amp": 0.9381583052223909,
+        "global_coverage": 0.9982355535950596,
+        "rules_missed": 0
+    },
+    "SUD_English-EWT": {
+        "f1_macro": 0.8837650833507706,
+        "f1_gain": 0.4246970732752039,
+        "precision_minority": 0.8606194690265486,
+        "recall_minority": 0.7480769230769231,
+        "amp": 0.918716532653288,
+        "global_coverage": 0.954452852153667,
+        "rules_missed": 4
+    },
+    "SUD_English-GENTLE/": {
+        "f1_macro": 0.9154187734309438,
+        "f1_gain": 0.4637238581767065,
+        "precision_minority": 0.8878504672897196,
+        "recall_minority": 0.8333333333333334,
+        "amp": 0.9396649003991226,
+        "global_coverage": 0.9845440494590417,
+        "rules_missed": 0
+    },
+    "SUD_English-LinES": {
+        "f1_macro": 0.4693422519509476,
+        "f1_gain": 0.067716235690785,
+        "precision_minority": 0.5588235294117647,
+        "recall_minority": 0.07851239669421488,
+        "amp": 0.7822228446369949,
+        "global_coverage": 0.9959239130434783,
+        "rules_missed": 31
+    },
+    "SUD_English-ParTUT": {
+        "f1_macro": 0.5310352692954694,
+        "f1_gain": 0.10151251679824408,
+        "precision_minority": 0.4857142857142857,
+        "recall_minority": 0.13385826771653545,
+        "amp": 0.8277342083200268,
+        "global_coverage": 0.9503891050583657,
+        "rules_missed": 36
+    }
+}
