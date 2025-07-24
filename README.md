@@ -13,7 +13,7 @@ The main code for rule extraction is in ```src```. Within this directory:
 
 - ```grex2```: the rule extraction scripts, including those for the decision tree, sparse logistic regression, and the RuleFit implementation.
 
-Our work is built upon a modified version of Grex2. The original Grex2 project is maintained at https://github.com/FilippoC/grex2. The code was primarily developed by Caio Corro.
+The work is built upon a modified version of Grex2. The original Grex2 project is maintained at https://github.com/FilippoC/grex2. The code was primarily developed by Caio Corro.
 
 The official documentation for Grex2 (currently under development) can be found at https://grex.grew.fr.
 
